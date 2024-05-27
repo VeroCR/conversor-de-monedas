@@ -29,14 +29,14 @@ public class Principal {
                         System.out.println(e.getMessage());
                     } catch (RuntimeException e) {
                         System.out.println(e.getMessage());
-                        System.out.println("Finalizando la aplicación.");
+                        System.out.println("Intente de nuevo.");
                     }
                     break;
                 case 2:
                     System.out.println(Menu.imprimirMonedas());
                     break;
-                case 3: 
-                    System.out.println(consulta.obtenerHistorial());
+                case 3:
+                    System.out.println(Historial.obtenerHistorial());
                     break;
                 case 4:
                     System.out.println("Saliendo de la aplicación.");

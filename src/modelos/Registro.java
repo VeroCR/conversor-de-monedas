@@ -1,3 +1,5 @@
+package modelos;
+
 import java.time.LocalDateTime;
 
 public class Registro {

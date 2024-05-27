@@ -1,4 +1,10 @@
+import Data.AllMonedas;
+import modelos.Moneda;
+
 public class Menu {
+
+    static AllMonedas allMonedas = new AllMonedas();
+
     public static String imprimirMenu(){
         return """
                 *************************************
@@ -17,7 +23,6 @@ public class Menu {
         monedas += "*************************************\n";
         monedas += "        MONEDAS DISPONIBLES        \n";
         monedas += "*************************************\n";
-        AllMonedas allMonedas = new AllMonedas();
         for (Moneda moneda : allMonedas.getMonedas()) {
             monedas += moneda + "\n";
         }
@@ -29,7 +34,6 @@ public class Menu {
         monedas += "*************************************\n";
         monedas += "        MONEDAS PRINCIPALES        \n";
         monedas += "*************************************\n\n";
-        AllMonedas allMonedas = new AllMonedas();
         for (Moneda moneda : allMonedas.getPrincipalesMonedas()) {
             monedas += moneda + "\n";
         }

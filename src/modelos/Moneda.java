@@ -1,3 +1,5 @@
+package modelos;
+
 public class Moneda {
     private String codigo;
     private String nombre;
